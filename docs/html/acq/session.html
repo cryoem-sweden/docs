@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Session Setup &mdash; Docs CryoEM Sweden  0.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scipion On-The-Fly processing" href="scipion.html" />
+    <link rel="prev" title="Glow Discharge Instructions" href="../prep/glow_discharge.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Docs CryoEM Sweden 
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sample Preparation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prep/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/carbon_coater.html">Carbon Coater</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/vitrobot.html">Vitrobot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#starting">Starting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#material-preparation">Material Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#vitrobot-cycle">Vitrobot Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#shutting-down">Shutting down</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/graphene_clips.html">Graphene Clips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/glow_discharge.html">Glow Discharge Instructions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Acquisition</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Session Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#launch-the-wizard-from-the-command-line">Launch the wizard from the command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-the-parameters-in-the-session-wizard-gui">Setup the parameters in the Session-Wizard GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copy-raw-data-to-your-project-folder">Copy raw data to your project folder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#k2-camera">K2 Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#falcon-3">Falcon 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scipion.html">Scipion On-The-Fly processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talos.html">Talos Artica Operation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="talos.html#manual-picking">Manual Picking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="talos.html#showing-picking-results">Showing Picking Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="talos.html#comparing-picking-results">Comparing Picking Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="titan.html">em-viewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="titan.html#file-browsing">File Browsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="titan.html#viewing-a-micrograph">Viewing a Micrograph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="titan.html#viewing-a-movie">Viewing a Movie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="titan.html#viewing-a-volume">Viewing a Volume</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Single-Particles</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../spa/spa_intro.html">Single Particles Analysis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tomography</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tomo/tomo_intro.html">Tomography</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/faqs_index.html">FAQS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Docs CryoEM Sweden </a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Session Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/acq/session.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="session-setup">
+<h1>Session Setup<a class="headerlink" href="#session-setup" title="Permalink to this headline">¶</a></h1>
+<p>As part of the computational infrastructure of the SciLifeLab Cryo-EM Facility, we have implemented a simple tracking
+system for each microscope session. It is <strong>COMPULSORY</strong> that all users go through the provided Session-Wizard,
+regardless of whether one plans to use Scipion for streaming processing or not. This wizard will do for you:</p>
+<ol class="arabic simple">
+<li><p>Create the required folders to store acquired images</p></li>
+<li><p>Create the text file required by Stefan (maybe removed in the future)</p></li>
+<li><p>Setup the Scipion project if using the streaming processing.</p></li>
+</ol>
+<div class="section" id="launch-the-wizard-from-the-command-line">
+<h2>Launch the wizard from the command line<a class="headerlink" href="#launch-the-wizard-from-the-command-line" title="Permalink to this headline">¶</a></h2>
+<p>From the Linux <cite>cryo-workstation</cite> (either 1 or 2) by the microscope, open a terminal window to connect to the
+<cite>cryo-staging</cite> machine by typing: <cite>ssh -Y cryo-staging</cite>. After that, you need to execute the command to start the
+session: <cite>session-titan</cite> (or session-talos depending on your booking).
+The following screenshot shows the terminal windows and both commands:</p>
+<img alt="../_images/terminal-screenshoot.png" src="../_images/terminal-screenshoot.png" />
+<p>After typing the session command, it should appears a GUI where it is possible to setup the parameters as explained in
+the next section.</p>
+</div>
+<div class="section" id="setup-the-parameters-in-the-session-wizard-gui">
+<h2>Setup the parameters in the Session-Wizard GUI<a class="headerlink" href="#setup-the-parameters-in-the-session-wizard-gui" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/wizard1.png" src="../_images/wizard1.png" />
+<p>The first tab should already grab the information of the user that is assigned to that day
+(the information is taken from the Booking System). In case that it is not correct, you can
+change to another user. The Facility operators could also select a given CEM000XX project. In the second tab
+(see figure below) you can choose if you want to use Scipion streaming processing or not. If yes, you can quickly
+select some protocols to be used.</p>
+<img alt="../_images/wizard2.png" src="../_images/wizard2.png" />
+</div>
+<div class="section" id="copy-raw-data-to-your-project-folder">
+<h2>Copy raw data to your project folder<a class="headerlink" href="#copy-raw-data-to-your-project-folder" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="k2-camera">
+<h3>K2 Camera<a class="headerlink" href="#k2-camera" title="Permalink to this headline">¶</a></h3>
+<p>If you are using the K2 camera on the Titan, you will need to go to the Gatan computer to execute a script to copy
+your movies to your project folder. This procedure is documented in point 29 of the
+[K2 Instruction Document](<a class="reference external" href="https://www.dropbox.com/sh/rtss2c5qblmurmf/AABqRvU3X9eIrM7wiR3a9Jg1a?dl=0&amp;preview=Using_the_K2_Titan_Krios.pdf">https://www.dropbox.com/sh/rtss2c5qblmurmf/AABqRvU3X9eIrM7wiR3a9Jg1a?dl=0&amp;preview=Using_the_K2_Titan_Krios.pdf</a>)</p>
+</div>
+<div class="section" id="falcon-3">
+<h3>Falcon 3<a class="headerlink" href="#falcon-3" title="Permalink to this headline">¶</a></h3>
+<p>If you are using the Falcon 3, first you need to select the folder name in EPU for storing the images.
+We recommend to follow the convention of project code + ‘_epu’ (e.g, dbb00072_epu, sll00069_epu, etc).
+Then the raw data can be found in <cite>/mnt/krios-falcon3</cite> (or <cite>/mnt/talos-falcon3</cite>).
+You can use the command <cite>copy-falcon3-data</cite> (using <cite>rsync</cite> internally) to copy the data to your project
+folder as in the example shown below (change to your own data folder):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ copy-falcon3-data /mnt/talos-falcon3/dbb00073_20180126_EPU
+</pre></div>
+</div>
+<p>The following lines are the output from the command (no need to be executed by the user)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ Output folder: /data/staging/dbb/dbb00073/f3_frames
+$ rsync -avuP /mnt/talos-falcon3/dbb00073_20180126_EPU/ /data/staging/dbb/dbb00073/f3_frames/
+$ rsync -avuP /mnt/talos-falcon3/dbb00073_20180126_EPU/ /data/staging/dbb/dbb00073/f3_frames/
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Check the Scipion pre-processing HERE (FIXME)</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="scipion.html" class="btn btn-neutral float-right" title="Scipion On-The-Fly processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../prep/glow_discharge.html" class="btn btn-neutral float-left" title="Glow Discharge Instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Swedish National CryoEM Facility 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
