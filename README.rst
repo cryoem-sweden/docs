@@ -7,7 +7,7 @@ Building the documentation (requires GitHub user)
 -------------------------------------------------
 
 * Install anaconda (or any other Python)
-* Create a new environment (e.g conda create --name cryoem-dos)
+* Create a new environment (e.g conda create --name cryoem-docs)
 * Install deps: `pip install sphinx sphinx-readthedocs`
 * Clone repository: `git clone git@github.com:cryoem-sweden/docs.git`
 * cd docs
