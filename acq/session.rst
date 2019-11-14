@@ -1,3 +1,4 @@
+.. _session-setup:
 
 Session Setup
 =============

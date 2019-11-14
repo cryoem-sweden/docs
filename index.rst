@@ -18,6 +18,7 @@ Here you will find the documentation for
     :maxdepth: 2
     :caption: Data Acquisition
 
+    acq/loading
     acq/session
     acq/scipion
     acq/talos
