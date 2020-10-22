@@ -23,6 +23,9 @@ Here you will find the documentation for
     acq/scipion
     acq/talos
     acq/titan
+    acq/auto_functions
+    acq/atlas_epu
+    acq/advanced
 
 .. toctree::
     :maxdepth: 2
