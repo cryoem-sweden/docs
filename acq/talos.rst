@@ -7,6 +7,7 @@ Launch Scipion Session
 ----------------------
 Before you start your microscope session you need to :ref:`start the scipion session <session-setup>`.
 
+
 Vacuum and Temperature
 -----------------------
 
@@ -56,7 +57,7 @@ To make it simple, we have predefined the most common EPU settings, which you ca
     Please take care to not overwrite the faciltity EPU settings files!
     
 
-.. image:: /images/talos/import.PNG
+.. image:: /images/talos/import.png
 
 
 Open Column Valves
@@ -77,11 +78,145 @@ Load cartridge
 Load the cartridge that you like by clicking on the position you want to load and then click on load in the Autoloader tab (this will take few minutes). You will notice that the column valves close automatically. 
 
 
-Grid Screening
----------------
+Low Mag Grid Screening
+----------------------
 
 Open the column valves and insert the screen. If you can't see the beam, it could be that your ice is to thick for the current grid position. In that case, go to Stage and change the grid position (use joystick or double click in the stage map).
 
 .. image:: /images/talos/stage1.PNG
+
+Use the joystick to navigate to the grid squares.
+
+.. image:: /images/talos/panel.png
+
+Find an empty square and add its position and then find an adjacent square/area, with carbon film, to do the alignments. You can name your grid square positions accordingly.
+
+.. image:: /images/talos/stage2.PNG
+
+
+Eucentric Height
+----------------
+
+For any imaging or alignment, always bring the speciment to eucentric height (at Grid square magnification). 
+
+1. Use the joystick to put a feature in the center of the flu-screen 
+2. Go to the Stage tab.
+3. Set Alpha to 30 degrees.
+
+.. image:: /images/talos/stage1.PNG
+
+4. Recentre the feature with the Z height.
+
+.. image:: /images/talos/z_height.png
+
+5. Reset the stage tilt.
+6. Set the grid square presets and redo the eucentric height.
+7. Set the hole-eucentric height presets, insert the objective aperture (100um) and redo the eucentric height.
+
+.. image:: /images/talos/apertures1.PNG
+
+.. note::
+
+   In the status line you will see how the values for z height (Z) and alpha (A) change. It is important that you first centre your feature without tilt and use the z button when the stage is tilted.
+   
+.. note::
+
+    Doing the eucentric height at diffiferent magnifications ensures that the feature does remain in the field of view. Z can be roughly set for atlas and grid square magnification and has to be exact for hole eucentric height.
+
+
+Autofocus
+---------
+
+1. Navigate to a carbon area and set the 'data acquisition' presets.
+2. Open the direct alignment tab (bottom right of monitor).
+
+.. image:: /images/talos/direct_alignments.PNG
+
+3. Press Beam shift and centre the beam using multi-function x&y.
+4. Press Done when finished.
+
+.. note::
+
+   If you cannot see the beam lower the magnification.
+
+5. Go to the auto-functions panel in EPU and select autofunctions-TEM, Autofocus, preset Autofocus
+6. Press Start.
+
+.. image:: /images/talos/autofocus_1.PNG
+
+.. warning::
+
+    Do not use the calibrations!
+    
+Autostigmate
+------------
+
+1. Go to the auto-functions panel in EPU and select autofunctions-TEM,  Autostigmate, preset Thon Ring
+2. Press Start.
+
+.. image:: /images/talos/stigmate_1.PNG
+
+
+Grid Screening
+--------------
+
+.. note::
+
+   The microscope is now aligned for screening. 
+
+1. Use the atlas preset to navigate to a grid square.
+2. In atlas mode always retract the objective aperture.
+3. Use the grid square and hole / eucentric height presets to locate your target areas.
+4. Always insert the objective aperture in  hole / eucentric height preset.
+5. Redo the eucentric height.
+6. Retract the flu-screen.
+7. Take an image with data acquisition preset.
+8. Save your images in your working directory via right click and save with overlay.
+
+.. note::
+   
+   If the beam is moving into your image, centre the beam with beam shift.
+   
+   
+Microscope alignment for EPU data collection
+--------------------------------------------
+
+1. Import your presets for either linear (short exposure with high dose) or counting mode (long exposure with low dose). 
+
+.. note::
+
+    The counting mode set up is more difficult, because the beam is very dim and one needs long exposure times when executing the auto-functions.
+
+2. Set the hole-eucentric height presets.
+3. Retract the objective aperture
+4. Redo the eucentric height.
+5. Navigate to a carbon area and set the ‘data acquisition presets.
+6. Insert screen.
+7. Open the direct alignment tab.
+8. Centre the beam with beam shift. 	
+9. Do the Autofocus routine.
+10. Run the Autocoma routine as described :ref:`here <advanced-microscopy-autocoma>`.
+11. Insert the objective aperture. 
+12. :ref:`centre the objective aperture <advanced-microscopy-centre-objective-aperture>`.
+13. Redo the auto-focus and stigmator autofunction.
+
+.. warning::
+
+    Do not redo the coma-free alignment.
+
+Check the beam dose
+-------------------
+
+1. Go to an empty square with atlas presets (or in case you saved the position in your stage map, press go).
+2. Load data acquisition presets.
+3. condense & centre beam.
+4. Press Set again (in order to spread the beam to its original size). 
+5. In the EPU panel, press measure dose. 
+6. Note down the exposure dose and adjust the exposure time accordingly.
+
+Atlas and EPU set up
+--------------------
+
+You can now proceed to :ref:`atlas acquisition and EPU set up <atlas-epu>`.
 
 
