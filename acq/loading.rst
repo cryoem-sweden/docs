@@ -37,7 +37,9 @@ Close the clipping station and fill with liquid N2 so that your grid boxes and s
 
 .. warning::
 
+
           Do not fill liquid N2 above the sample, as this might cause the grid squares to break.
+
 
 Once the clipping station is cool, do the following:
 
@@ -54,6 +56,7 @@ Once the clipping station is cool, do the following:
 
 
 
+<<<<<<< HEAD
 Loading of clipped Grids into the Cassette
 ------------------------------------------
 
@@ -78,9 +81,9 @@ For visual illustration wath the following video:
     </div>
 
 
-
 Preparing Nanocap
 -----------------
+
 
 1. Gently pour liquid N2 into the nanocup, try not to spill liquid N2 on the sides
 2. Firmly press lid for about 10s, wait
@@ -116,6 +119,7 @@ Loading of Nanocap into the microscope
 
 For visual illustration wath the following video:
 
+
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
@@ -130,6 +134,4 @@ Loading of Cassette with clipped grids
 3. use the cassette holding tool and hold the cassette from the back.
 4. insert the cassette into the nano cap, with the front silver metal plate going in first.
 5. load the nanocap into the microscope, follow the instructions above
-
-
 
