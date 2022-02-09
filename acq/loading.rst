@@ -28,8 +28,8 @@ Load the clipping tool with c clip:
 
 1. With a pair of tweezers, take up a c clip from its center.
 2. Gently insert it into the clipping tool.
-3. Puch the sides of the c clip to the clipping tool wall.
-4. Gently puch the clipping tool onto the filter paper .
+3. Push the sides of the c clip to the clipping tool wall.
+4. Gently push the clipping tool onto the filter paper .
 5. Check top of the clipping tool to locate the c clip.
 
 
@@ -49,18 +49,18 @@ Once the clipping station is cool, do the following:
 4. With a pair of tweezers, gently take out a grid from the storage grid box and transfer in onto your c clip ring.
 5. With the auto grid tweezers, rotate the golden part of the clipping station.
 6. Use the loaded clipping tool and place it on top of your grid.
-7. Gently push the clipping tool until you here a gentle clicking sound.
+7. Gently push the clipping tool until you hear a gentle clicking sound.
 8. Remove the clipping tool and check if the c clip is still on the tool or on the grid.
 9. To double check if the c clip is tight you can rotate the autogrid with the auto grid tweezers.
-10. Insert the clipped autogrid into the auto grid box, starting from position 1. C clips face towords the front of the box.
+10. Insert the clipped autogrid into the auto grid box, starting from position 1. C clips face towards the front of the box.
 
 
 
-<<<<<<< HEAD
+
 Loading of clipped Grids into the Cassette
 ------------------------------------------
 
-1. Cool down styrofoam box inluding the metal device for grid boxes and the autoloader cassette
+1. Cool down styrofoam box including the metal device for grid boxes and the autoloader cassette
 2. Insert and cool down cassette (silver plate faces front)
 3. Cool down tools
 4. Once the metal device is cold, transfer auto grid box with clipped grids into the metal device
@@ -71,7 +71,7 @@ Loading of clipped Grids into the Cassette
 9. Hold the grid firmly with the tool, until it is really inserted in the cassette (otherwise it is very difficult to recover the grid)
 
 
-For visual illustration wath the following video:
+For visual illustration wacth the following video:
 
 
 .. raw:: html
@@ -91,7 +91,7 @@ Preparing Nanocap
 4. The nanocap is ready when their is no bubbling of liquid N2 anymore
 
 
-For visual illustration wath the following video:
+For visual illustration watch the following video:
 
 
 .. raw:: html
@@ -117,7 +117,7 @@ Loading of Nanocap into the microscope
 5. Remove cassette with cassette holding tool and insert into liquid N2, remove old grids.
 
 
-For visual illustration wath the following video:
+For visual illustration watch the following video:
 
 
 .. raw:: html
