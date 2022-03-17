@@ -2,7 +2,7 @@
 Auto-Functions
 ======================
  
-
+.. _autofunctions-eucentric-height:
 
 Eucentric Height
 ----------------

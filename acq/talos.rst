@@ -198,7 +198,8 @@ Microscope alignment for EPU data collection
 10. Run the Autocoma routine as described :ref:`here <autofunctions-autocoma>`.
 11. Insert the objective aperture. 
 12. :ref:`centre the objective aperture <advanced-microscopy-centre-objective-aperture>`.
-13. Redo the auto-focus and stigmator autofunction.
+13. Optionally, verify :ref:`parallel illumination <advanced-microscopy-parallel-illumination>`
+14. Redo the auto-focus and stigmator autofunction.
 
 .. warning::
 

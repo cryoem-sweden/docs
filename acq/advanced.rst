@@ -69,3 +69,72 @@ Do the following in order to centre the objective aperture.
 6. Click 'Adjust'. 
 7. Press 'Diffraction' again.
 8. Answer EPU question with 'Yes'.
+
+
+.. _advanced-microscopy-parallel-illumination:
+
+Parallel illumination
+---------------------
+
+With parallel illumination, the beam is parallel to the optical axis between the upper and lower pole pieces. This is important in TEM to get the same magnification and defocus independent of distances from the optical axis. The condition to have parallel beam is to have the last cross-over before the upper pole-piece in the front focal plane of the objective lens.
+
+Two vs three condenser lens systmes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In three-condenser lens systems (such as the Titan Krios), parallel illumination condition is maintained by the C2-C3 zoom, where the C3 lens compensates when changing the intensity (*i.e.* the beam size) to move the cross-over to the front focal plane. Thus, one can have parallel beam in a large range of intensity settings (the TEM User Interface tells you when you have parallel beam on a Krios).
+
+On the Talos/Glacios systems with two main condenser lenses, one can obtain some degree of zoom using the *mini-condenser lens* situated just above the upper-pole piece of the objective lens, in the so called microprobe (mP) mode. However, using the minicondenser will result in a larger beam (several micrometers). By disabeling the minicondenser--nanoprobe (nP) mode--the apparent source of the beam will be farther away and thus appear smaller and consequently give a smaller beam. Having only two condenser lenses in nP mode, one can only independently set the brightness of the beam using the C1 condenser lens (spot size). The beam-size which is normally set by the C2 condenser lens (*Intensity* knob), is instead used to move the cross-over to the front focal plane of the objevtive lens to get parallel illuination. Therefore, on a two condenser lens system, parallel illumination can only be obtained with a single beam diameter for a specific spot size. On the Talos/Glacios, the parallel beam is approximately 1.8 micrometer in diameter.
+
+Setting/checking parallel illumination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Due to the symmetry of the objective lens, having a cross-over in the front focal plane approximately coincides with having the diffraction plane in the back focal plane, where the objective lens aperture is situated. Therefore, to set parallel illumination, one changes the intensity (C2 lens) to ensure that the diffraction plane is in focus when the objective aperture is in focus.
+
+Procedure:
+
+- Start with a well-aligned microscope
+- Load a calibration sample, preferably a cross-grating, but the gold foil of UltAufoil grids also works or even carbon.
+- Go to a nice clean area.
+- Bring the sample to :ref:`eucentric heigh <autofunctions-eucentric-height>`. To make sure to get this accurate, (also) do it at hole/eucentric height magnification, *e.g.* 11,000x magnification.
+- Focus the sample
+- *Set* what you believe is parallel illumination, i.e. the *Data acquisition* setting.
+- Insert the fluorescent screen
+- Got to diffraction mode by pressing the button on the hand panel. If EPU is running, it will complain, but just ignore that.
+- Insert the 100 |um| objective aperture
+- Go to diffraction camera lenght D850 mm by turning the *Magnification* knob on the hand panel
+- Bring the aperture in focus by turning the *Focus* knob on the hand panel. You may have to adjust the brightness of the image using the scroll-wheel to see clearly. It can also be easier to see the edge of the aperture, if moving the aperture so that it overlaps with the central speckle (Aperture => Objective => Adjust => Multifucation X and Multifuction Y).
+- Set parallel illumination by making the diffraction pattern appeaar as sharp as possible by turning the *Intensity* knob on the hand panel.
+- Iterate between these too steps until both feature are in focus.
+- For higher accuracy, increase the camera length to  D5.7 m or longer and make the central speckel as large as possible. The high-resolution mode of the flu-screen can be useful.
+- Once happy, note down the value of the intensity (C2) aperture, which will be the parallel illumination setting for that gun lens and spot size.
+- Center the objective aperture and exit the diffraction mode.
+
+For detailed notes, please read Herzik (2020).
+
+.. |um| replace:: μm
+
+
+Parallel illumination at gun lens 3, Glacios F3EC, Uppsala University
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+====  =========  ===============
+Spot  C2         Intensity (EPU)
+====  =========  ===============
+ 1     46.963%    0.437
+ 2     44.619%    0.441
+ 3     42.605%    0.444
+ 4     41.147%    0.447
+ 5     39.906%    0.450
+ 6     38.965%    0.451
+ 7     38.204%    0.453
+ 8     37.596%    0.455
+ 9     37.166%    0.456
+ 10    36.848%    0.456
+ 11    36.615%    0.458
+====  =========  ===============
+
+
+References
+^^^^^^^^^^
+- Herzik, et al. (2017) https://doi.org/10.1038/nmeth.4461
+- Herzik (2020) https://doi.org/10.1007/978-1-0716-0966-8_6
