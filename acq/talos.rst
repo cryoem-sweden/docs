@@ -212,7 +212,7 @@ Check the beam dose
 3. condense & centre beam.
 4. Press Set again (in order to spread the beam to its original size). 
 5. In the EPU panel, press measure dose. 
-6. Note down the exposure dose and adjust the exposure time accordingly.
+6. Note down the exposure dose and adjust the exposure time accordingly. For F3EC use, follow the procedure :ref:`here <f3ec-setup>`.
 
 Atlas and EPU set up
 --------------------
