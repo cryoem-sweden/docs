@@ -129,6 +129,11 @@ Magnification  Pixelsize  Calibrated pixel size
 =============  =========  =====================
 
 
+MTF curves
+----------
+
+- 200 kV, counting mode: https://github.com/3dem/relion/blob/ver3.1/data/mtf_falcon3EC_200kV.star
+- 300 kV, counting mode: https://github.com/3dem/relion/blob/ver3.1/data/mtf_falcon3EC_300kV.star
 
 File compression
 ----------------
