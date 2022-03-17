@@ -53,6 +53,9 @@ Autostigmate
 .. image:: /images/talos/stigmate_1.PNG
 
 
+.. _autofunctions-autocoma:
+
+           
 Autocoma
 --------
 

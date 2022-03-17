@@ -69,17 +69,3 @@ Do the following in order to centre the objective aperture.
 6. Click 'Adjust'. 
 7. Press 'Diffraction' again.
 8. Answer EPU question with 'Yes'.
-
-
-.. _advanced-microscopy-autocoma:
-
-Autocoma
---------
-
-1. Set data acquisition mag.
-2. Go to the auto-functions panel in EPU.
-3. Sselect autofunctions-TEM,  Autocoma, preset Thon Ring
-4. Press Start.
-	
-.. image:: /images/talos/coma.PNG
-
