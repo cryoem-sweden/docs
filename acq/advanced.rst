@@ -78,12 +78,17 @@ Parallel illumination
 
 With parallel illumination, the beam is parallel to the optical axis between the upper and lower pole pieces. This is important in TEM to get the same magnification and defocus independent of distances from the optical axis. The condition to have parallel beam is to have the last cross-over before the upper pole-piece in the front focal plane of the objective lens.
 
-Two vs three condenser lens systmes
+Two vs three condenser lens systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In three-condenser lens systems (such as the Titan Krios), parallel illumination condition is maintained by the C2-C3 zoom, where the C3 lens compensates when changing the intensity (*i.e.* the beam size) to move the cross-over to the front focal plane. Thus, one can have parallel beam in a large range of intensity settings (the TEM User Interface tells you when you have parallel beam on a Krios).
 
-On the Talos/Glacios systems with two main condenser lenses, one can obtain some degree of zoom using the *mini-condenser lens* situated just above the upper-pole piece of the objective lens, in the so called microprobe (mP) mode. However, using the minicondenser will result in a larger beam (several micrometers). By disabeling the minicondenser--nanoprobe (nP) mode--the apparent source of the beam will be farther away and thus appear smaller and consequently give a smaller beam. Having only two condenser lenses in nP mode, one can only independently set the brightness of the beam using the C1 condenser lens (spot size). The beam-size which is normally set by the C2 condenser lens (*Intensity* knob), is instead used to move the cross-over to the front focal plane of the objevtive lens to get parallel illuination. Therefore, on a two condenser lens system, parallel illumination can only be obtained with a single beam diameter for a specific spot size. On the Talos/Glacios, the parallel beam is approximately 1.8 micrometer in diameter.
+.. image:: /images/parallel-illumination.pdf
+
+On Talos/Glacios systems with two main condenser lenses, one can obtain some degree of zoom using the *mini-condenser lens* situated just above the upper-pole piece of the objective lens, in the so called microprobe (μP) mode. However, using the minicondenser will result in a larger beam (several micrometers).
+
+By disabeling the minicondenser in nanoprobe (nP) mode, the apparent source of the beam will be farther away and thus appear smaller and consequently give a smaller beam. Having only two condenser lenses in nP mode, one can only independently set one beam parameter, which is the brightness using the C1 condenser lens (spot size). The C2 lens (*Intensity* knob), which is normally used to set the beam size, is instead used to move the cross-over to the front focal plane of the objevtive lens to get parallel illuination. Therefore, on a two condenser lens system, parallel illumination can only be obtained with *a single beam diameter for a specific spot size*. On the Talos/Glacios, the parallel beam is approximately 1.8 micrometer in diameter.
+
 
 Setting/checking parallel illumination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
