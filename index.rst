@@ -23,6 +23,7 @@ Here you will find the documentation for
     acq/scipion
     acq/talos
     acq/titan
+    acq/f3ec
     acq/auto_functions
     acq/atlas_epu
     acq/advanced
