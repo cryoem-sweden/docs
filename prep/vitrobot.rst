@@ -74,6 +74,9 @@ Material Preparation
         |
         |
         .. image:: /images/Coolant_chamber.png
+            :alt: figure 1
+            :scale: 50 %
+            :align: center
         |
     
 * **Condense ethane:**
@@ -94,6 +97,9 @@ Material Preparation
     |
     |
     .. image:: /images/Valves_ethane.png
+        :alt: figure 2
+        :scale: 50 %
+        :align: center
     |
 * **(Condense ethane with a NanoSoft ethane-condenser)**:
     * **WEAR GLASSES AND GLOVES, ALWAYS WORK IN THE FUME HOOD**, make sure that all LN2 have evaporated from the ethane cup
