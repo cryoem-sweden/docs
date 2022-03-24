@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talos Artica Operation &mdash; Docs CryoEM Sweden  0.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Titan Krios" href="titan.html" />
+    <link rel="prev" title="Scipion On-The-Fly processing" href="scipion.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Docs CryoEM Sweden 
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sample Preparation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prep/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/carbon_coater.html">Carbon Coater</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/vitrobot.html">Vitrobot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#starting">Starting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#material-preparation">Material Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#vitrobot-cycle">Vitrobot Cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#shutting-down">Shutting down</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/vitrobot.html#additionaly">Additionaly</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/graphene_clips.html">Graphene Clips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/glow_discharge.html">Glow Discharge Instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prep/glow_discharge.html#pelco-easiglow">PELCO easiGlow™</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/glow_discharge.html#quorum-gloqube-plus">Quorum GloQube® Plus</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Data Acquisition</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="loading.html">Grid Preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#clipping-autogrids">Clipping Autogrids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#loading-of-clipped-grids-into-the-cassette">Loading of clipped Grids into the Cassette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#preparing-nanocap">Preparing Nanocap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#unloading-existing-cassette">Unloading Existing Cassette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#loading-of-nanocap-into-the-microscope">Loading of Nanocap into the microscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loading.html#loading-of-cassette-with-clipped-grids">Loading of Cassette with clipped grids</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Session Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="session.html#launch-the-wizard-from-the-command-line">Launch the wizard from the command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html#setup-the-parameters-in-the-session-wizard-gui">Setup the parameters in the Session-Wizard GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session.html#copy-raw-data-to-your-project-folder">Copy raw data to your project folder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="session.html#k2-camera">K2 Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session.html#falcon-3">Falcon 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="session.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scipion.html">Scipion On-The-Fly processing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Talos Artica Operation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#launch-scipion-session">Launch Scipion Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vacuum-and-temperature">Vacuum and Temperature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cassette-loading-and-inventory">Cassette Loading and Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-epu">Start EPU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-epu-settings">Load EPU Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-column-valves">Open Column Valves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-cartridge">Load cartridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#low-mag-grid-screening">Low Mag Grid Screening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eucentric-height">Eucentric Height</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#autofocus">Autofocus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#autostigmate">Autostigmate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grid-screening">Grid Screening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#microscope-alignment-for-epu-data-collection">Microscope alignment for EPU data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-the-beam-dose">Check the beam dose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#atlas-and-epu-set-up">Atlas and EPU set up</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="titan.html">Titan Krios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="f3ec.html">Falcon 3EC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#linear-vs-counting-mode">Linear vs counting mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#dose-fractioning-and-frame-alignment">Dose fractioning and frame alignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#exposure-and-dose-fractionation-procedure">Exposure and dose-fractionation procedure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="f3ec.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#magnification-table-talso-arctica-f3ec-scilifelab-solna">Magnification table, Talso Arctica F3EC, SciLifeLab Solna</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#magnification-table-glacios-f3ec-uppsala-university">Magnification table, Glacios F3EC, Uppsala University</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#mtf-curves">MTF curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f3ec.html#file-compression">File compression</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auto_functions.html">Auto-Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto_functions.html#eucentric-height">Eucentric Height</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_functions.html#autofocus">Autofocus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_functions.html#autostigmate">Autostigmate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_functions.html#autocoma">Autocoma</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="atlas_epu.html">Atlas and EPU</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="atlas_epu.html#calibrate-image-shifts">Calibrate Image shifts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atlas_epu.html#atlas-acquisition">Atlas Acquisition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atlas_epu.html#set-up-epu-session">Set up EPU Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atlas_epu.html#square-selection">Square Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atlas_epu.html#hole-selection">Hole Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced Microscopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#condenser-astigmatism">Condenser Astigmatism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#condenser-aperture">Condenser Aperture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#beam-tilt-pivot-points">Beam Tilt Pivot Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#objective-aperture-centering">Objective Aperture centering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html#parallel-illumination">Parallel illumination</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#two-vs-three-condenser-lens-systems">Two vs three condenser lens systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#setting-checking-parallel-illumination">Setting/checking parallel illumination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#parallel-illumination-at-gun-lens-3-glacios-f3ec-uppsala-university">Parallel illumination at gun lens 3, Glacios F3EC, Uppsala University</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Single-Particles</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../spa/spa_intro.html">Single Particles Analysis</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tomography</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tomo/tomo_intro.html">Tomography</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/faqs_index.html">FAQS</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Docs CryoEM Sweden </a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Talos Artica Operation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/acq/talos.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="talos-artica-operation">
+<h1>Talos Artica Operation<a class="headerlink" href="#talos-artica-operation" title="Permalink to this headline">¶</a></h1>
+<section id="launch-scipion-session">
+<h2>Launch Scipion Session<a class="headerlink" href="#launch-scipion-session" title="Permalink to this headline">¶</a></h2>
+<p>Before you start your microscope session you need to <a class="reference internal" href="session.html#session-setup"><span class="std std-ref">start the scipion session</span></a>.</p>
+</section>
+<section id="vacuum-and-temperature">
+<h2>Vacuum and Temperature<a class="headerlink" href="#vacuum-and-temperature" title="Permalink to this headline">¶</a></h2>
+<p>Check that the column &amp; autoloader vacuum and temperature is good.  Typical values for the vacuum are log 1 for the column, log 15-30 for the autoloader; the autoloader temperature should be below -180C.</p>
+<img alt="../_images/vacuum.PNG" src="../_images/vacuum.PNG" />
+<img alt="../_images/temperature_control.PNG" src="../_images/temperature_control.PNG" />
+</section>
+<section id="cassette-loading-and-inventory">
+<h2>Cassette Loading and Inventory<a class="headerlink" href="#cassette-loading-and-inventory" title="Permalink to this headline">¶</a></h2>
+<p>Once the microscope is cold, you can <a class="reference internal" href="loading.html#loading-loading-autoloader"><span class="std std-ref">load the cassette</span></a>. After the cassette is loaded, run an inventory from the Autoloader tab, make sure that all the positions that you loaded are properly detected. Occupied positions are shown in blue, empty ones in grey.</p>
+<img alt="../_images/autoloader.PNG" src="../_images/autoloader.PNG" />
+</section>
+<section id="start-epu">
+<h2>Start EPU<a class="headerlink" href="#start-epu" title="Permalink to this headline">¶</a></h2>
+<p>In case EPU is not open yet, start EPU via the Start menu. If the column valves are closed ignore the message. The window will be hiding behind the user interface software. Drag it to the second screen, minimise and maximise it again.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If SerialEM is open, SerialEM must be closed before opening EPU.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TIA needs to be started for EPU to open and run. In case TIA is not open yet, start TIA via the Start menu.</p>
+</div>
+</section>
+<section id="load-epu-settings">
+<h2>Load EPU Settings<a class="headerlink" href="#load-epu-settings" title="Permalink to this headline">¶</a></h2>
+<p>In EPU, click on the Preparation tab, Acquisition and Optics settings. Here all the microscope conditions can be inputted to the software for the Atlas, Grid-square, Hole/Eucentric height, Data acquisition, Autofocus and Drift measurement.</p>
+<dl class="simple">
+<dt>To make it simple, we have predefined the most common EPU settings, which you can Import via the import tab:</dt><dd><ol class="arabic simple">
+<li><p>Navigate to computer/staging/fac/settings/EPU/general</p></li>
+<li><p>Choose the relevant file and press open</p></li>
+<li><p>Save the file in your own directory and modify if needed.</p></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please take care to not overwrite the faciltity EPU settings files!</p>
+</div>
+<img alt="images/talos/import.png" src="images/talos/import.png" />
+</section>
+<section id="open-column-valves">
+<h2>Open Column Valves<a class="headerlink" href="#open-column-valves" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Load the atlas presets.</p></li>
+<li><p>Open the column valves. You can check the valve, screen or blanking state at the top left corner of the flu-cam viewer.</p></li>
+<li><p>Now insert the flu-screen. You can either press R1 or Press ‘Insert Screen’ from the FluCam Menu.</p></li>
+<li><p>In case the beam is blanked, unblank the beam (press L3). Now there should be no more green messages at the top left corner of the flu-cam viewer.</p></li>
+</ol>
+</div></blockquote>
+<img alt="../_images/screen-screen-lift.PNG" src="../_images/screen-screen-lift.PNG" />
+<p>Now you should be able to see the beam. If you still can’t see the beam, you could double check that the high tension is on (yellow HT button in the FEG control tab of the microscope user interface). If the HT is on, but the beam is weak check that the operate button for the FEG is on (extraction voltage should be 4450, gun lens should be 5).</p>
+</section>
+<section id="load-cartridge">
+<h2>Load cartridge<a class="headerlink" href="#load-cartridge" title="Permalink to this headline">¶</a></h2>
+<p>Load the cartridge that you like by clicking on the position you want to load and then click on load in the Autoloader tab (this will take few minutes). You will notice that the column valves close automatically.</p>
+</section>
+<section id="low-mag-grid-screening">
+<h2>Low Mag Grid Screening<a class="headerlink" href="#low-mag-grid-screening" title="Permalink to this headline">¶</a></h2>
+<p>Open the column valves and insert the screen. If you can’t see the beam, it could be that your ice is to thick for the current grid position. In that case, go to Stage and change the grid position (use joystick or double click in the stage map).</p>
+<img alt="../_images/stage1.PNG" src="../_images/stage1.PNG" />
+<p>Use the joystick to navigate to the grid squares.</p>
+<img alt="../_images/panel.png" src="../_images/panel.png" />
+<p>Find an empty square and add its position and then find an adjacent square/area, with carbon film, to do the alignments. You can name your grid square positions accordingly.</p>
+<img alt="../_images/stage2.PNG" src="../_images/stage2.PNG" />
+</section>
+<section id="eucentric-height">
+<h2>Eucentric Height<a class="headerlink" href="#eucentric-height" title="Permalink to this headline">¶</a></h2>
+<p>For any imaging or alignment, always bring the speciment to eucentric height (at Grid square magnification).</p>
+<ol class="arabic simple">
+<li><p>Use the joystick to put a feature in the center of the flu-screen</p></li>
+<li><p>Go to the Stage tab.</p></li>
+<li><p>Set Alpha to 30 degrees.</p></li>
+</ol>
+<img alt="../_images/stage1.PNG" src="../_images/stage1.PNG" />
+<ol class="arabic simple" start="4">
+<li><p>Recentre the feature with the Z height.</p></li>
+</ol>
+<img alt="../_images/z_height.png" src="../_images/z_height.png" />
+<ol class="arabic simple" start="5">
+<li><p>Reset the stage tilt.</p></li>
+<li><p>Set the grid square presets and redo the eucentric height.</p></li>
+<li><p>Set the hole-eucentric height presets, insert the objective aperture (100um) and redo the eucentric height.</p></li>
+</ol>
+<img alt="../_images/apertures1.PNG" src="../_images/apertures1.PNG" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the status line you will see how the values for z height (Z) and alpha (A) change. It is important that you first centre your feature without tilt and use the z button when the stage is tilted.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Doing the eucentric height at diffiferent magnifications ensures that the feature does remain in the field of view. Z can be roughly set for atlas and grid square magnification and has to be exact for hole eucentric height.</p>
+</div>
+</section>
+<section id="autofocus">
+<h2>Autofocus<a class="headerlink" href="#autofocus" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to a carbon area and set the ‘data acquisition’ presets.</p></li>
+<li><p>Open the direct alignment tab (bottom right of monitor).</p></li>
+</ol>
+<img alt="../_images/direct_alignments.PNG" src="../_images/direct_alignments.PNG" />
+<ol class="arabic simple" start="3">
+<li><p>Press Beam shift and centre the beam using multi-function x&amp;y.</p></li>
+<li><p>Press Done when finished.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you cannot see the beam lower the magnification.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Go to the auto-functions panel in EPU and select autofunctions-TEM, Autofocus, preset Autofocus</p></li>
+<li><p>Press Start.</p></li>
+</ol>
+<img alt="../_images/autofocus_1.PNG" src="../_images/autofocus_1.PNG" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use the calibrations!</p>
+</div>
+</section>
+<section id="autostigmate">
+<h2>Autostigmate<a class="headerlink" href="#autostigmate" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Go to the auto-functions panel in EPU and select autofunctions-TEM,  Autostigmate, preset Thon Ring</p></li>
+<li><p>Press Start.</p></li>
+</ol>
+<img alt="../_images/stigmate_1.PNG" src="../_images/stigmate_1.PNG" />
+</section>
+<section id="grid-screening">
+<h2>Grid Screening<a class="headerlink" href="#grid-screening" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The microscope is now aligned for screening.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Use the atlas preset to navigate to a grid square.</p></li>
+<li><p>In atlas mode always retract the objective aperture.</p></li>
+<li><p>Use the grid square and hole / eucentric height presets to locate your target areas.</p></li>
+<li><p>Always insert the objective aperture in  hole / eucentric height preset.</p></li>
+<li><p>Redo the eucentric height.</p></li>
+<li><p>Retract the flu-screen.</p></li>
+<li><p>Take an image with data acquisition preset.</p></li>
+<li><p>Save your images in your working directory via right click and save with overlay.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the beam is moving into your image, centre the beam with beam shift.</p>
+</div>
+</section>
+<section id="microscope-alignment-for-epu-data-collection">
+<h2>Microscope alignment for EPU data collection<a class="headerlink" href="#microscope-alignment-for-epu-data-collection" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Import your presets for either linear (short exposure with high dose) or counting mode (long exposure with low dose).</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The counting mode set up is more difficult, because the beam is very dim and one needs long exposure times when executing the auto-functions.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Set the hole-eucentric height presets.</p></li>
+<li><p>Retract the objective aperture</p></li>
+<li><p>Redo the eucentric height.</p></li>
+<li><p>Navigate to a carbon area and set the ‘data acquisition presets.</p></li>
+<li><p>Insert screen.</p></li>
+<li><p>Open the direct alignment tab.</p></li>
+<li><p>Centre the beam with beam shift.</p></li>
+<li><p>Do the Autofocus routine.</p></li>
+<li><p>Run the Autocoma routine as described <a class="reference internal" href="auto_functions.html#autofunctions-autocoma"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>Insert the objective aperture.</p></li>
+<li><p><a class="reference internal" href="advanced.html#advanced-microscopy-centre-objective-aperture"><span class="std std-ref">centre the objective aperture</span></a>.</p></li>
+<li><p>Optionally, verify <a class="reference internal" href="advanced.html#advanced-microscopy-parallel-illumination"><span class="std std-ref">parallel illumination</span></a></p></li>
+<li><p>Redo the auto-focus and stigmator autofunction.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not redo the coma-free alignment.</p>
+</div>
+</section>
+<section id="check-the-beam-dose">
+<h2>Check the beam dose<a class="headerlink" href="#check-the-beam-dose" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Go to an empty square with atlas presets (or in case you saved the position in your stage map, press go).</p></li>
+<li><p>Load data acquisition presets.</p></li>
+<li><p>condense &amp; centre beam.</p></li>
+<li><p>Press Set again (in order to spread the beam to its original size).</p></li>
+<li><p>In the EPU panel, press measure dose.</p></li>
+<li><p>Note down the exposure dose and adjust the exposure time accordingly. For F3EC use, follow the procedure <a class="reference internal" href="f3ec.html#f3ec-setup"><span class="std std-ref">here</span></a>.</p></li>
+</ol>
+</section>
+<section id="atlas-and-epu-set-up">
+<h2>Atlas and EPU set up<a class="headerlink" href="#atlas-and-epu-set-up" title="Permalink to this headline">¶</a></h2>
+<p>You can now proceed to <a class="reference internal" href="atlas_epu.html#atlas-epu"><span class="std std-ref">atlas acquisition and EPU set up</span></a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scipion.html" class="btn btn-neutral float-left" title="Scipion On-The-Fly processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="titan.html" class="btn btn-neutral float-right" title="Titan Krios" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Swedish National CryoEM Facility .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
