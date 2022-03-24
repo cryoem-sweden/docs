@@ -22,11 +22,11 @@ sys.path.insert(0, os.path.join(here, '..'))
 # -- Project information -----------------------------------------------------
 
 project = 'Docs CryoEM Sweden '
-copyright = '2019, Swedish National CryoEM Facility '
+copyright = '2022, Swedish National CryoEM Facility '
 author = 'Swedish National CryoEM Facility '
 
 # The full version, including alpha/beta/rc tags
-version = '0.0.0'
+version = '0.0.1'
 release = '0.0.0'
 
 

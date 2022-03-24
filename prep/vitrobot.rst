@@ -88,7 +88,7 @@ Material Preparation
     * Place your marked grid box(es) onto the grid box holder (TEST them!)
     * Transfer the coolant chamber and LN2 thermos flask next to the Vitrobot
     
-    .. image:: /docs/images/Valves_ethane.png
+    .. image:: /images/Valves_ethane.png
     
 * **(Condense ethane with a NanoSoft ethane-condenser)**:
     * **WEAR GLASSES AND GLOVES, ALWAYS WORK IN THE FUME HOOD**, make sure that all LN2 have evaporated from the ethane cup
