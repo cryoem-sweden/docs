@@ -68,13 +68,17 @@ Material Preparation
 * Prepare Falcon tubes, grid boxes and screwdrivers or rods
 
 * **Prepare the coolant container**:
-    * Insert brass coloured inner cup, grid box holder, the spindle/spider and anti-contamination ring
+    * Insert brass coloured inner cup, grid box holder, the spindle/spider and anti-contamination ring (figure 1)
     * Fill up the inner (brass) and outer chamber (styrofoam) with LN2 and let it settle under a glass cupola (to prevent contaminations from humidity in the air)
     * Wait until LN2 evaporates from the brass coloured cup (should take around 5 minutes), top up the outer chamber if necessary
+        |
+        |
+        .. image:: /images/Coolant_chamber.png
+        |
     
 * **Condense ethane:**
     * **WEAR GLASSES AND GLOVES, ALWAYS WORK IN THE FUME HOOD**, make sure that all LN2 have evaporated from the ethane cup
-    * Open the valve 1, and valve 3 on the  on the ethane bottle (figure 1)
+    * Open the valve 1, and valve 3 on the  on the ethane bottle (figure 2)
     * **Carefully** open valve 2 of the ethane bottle, aim for your skin on the wrist above you gloved hand. When you can feel a gentle stream of gas on your skin, the inital stream of gas i sufficient (on the manometer the pressure should be around 1). **Better too slow than too fast!**
     * Close valve 2. Put the pipette tip of the out-flow at the bottom of the ethane cup, **quickly** turn back the flow of ethane by turning valve 2 back to the position of the gentle stream.
     * Start filling the ethane cup with ethane. After 10-30 seconds the sound of the ethane should start to zizzle (as a result of liquid ethane forming)
@@ -87,9 +91,10 @@ Material Preparation
     * Top up the LN2 as required
     * Place your marked grid box(es) onto the grid box holder (TEST them!)
     * Transfer the coolant chamber and LN2 thermos flask next to the Vitrobot
-    
+    |
+    |
     .. image:: /images/Valves_ethane.png
-    
+    |
 * **(Condense ethane with a NanoSoft ethane-condenser)**:
     * **WEAR GLASSES AND GLOVES, ALWAYS WORK IN THE FUME HOOD**, make sure that all LN2 have evaporated from the ethane cup
     * Follow the instructions on the following video: https://youtu.be/J_M-IUlPuNM
