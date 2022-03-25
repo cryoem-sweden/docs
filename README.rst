@@ -1,7 +1,7 @@
 CryoEM Sweden Facility Documentation
 ====================================
 This repository contains documentation pages with information for the Facility users
-Check it online at: xxx
+Check it online at: https://cryoem-sweden.github.io/docs/
 
 Building the documentation (requires GitHub user)
 -------------------------------------------------
