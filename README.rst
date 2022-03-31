@@ -27,7 +27,21 @@ Updating the documentation (requires GitHub user)
   * git commit -m "Messages about your changes"
   * git push 
   
+Publishing the changes online (requires GitHub user)
+----------------------------------------------------
 
+* Update 'master' branch with latest changes
+* cd docs
+* git checkout master
+* git pull  # update with new changes
+* git checkout html 
+* git make html (or make clean html to completely rebuild)
+* Review generated html at: /path/to/docs/_build/html/index.html
+* # Copy generated files from _build/html to internal docs folder
+* rsync -av _build/html/ docs/
+* Commit changes: 
+  * git commit -am "New release of the documentation"
+  * git push
 
 
 
