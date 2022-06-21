@@ -6,12 +6,28 @@ Check it online at: https://cryoem-sweden.github.io/docs/
 Building the documentation (requires GitHub user)
 -------------------------------------------------
 
-* Install anaconda (or any other Python)
-* Create a new environment (e.g conda create --name cryoem-docs)
-* Install deps: `pip install sphinx sphinx-readthedocs sphinx_rtd_theme`
-* Clone repository: `git clone git@github.com:cryoem-sweden/docs.git`
-* cd docs
-* make html
+**Step 1:** Install anaconda ( or miniconda)
+
+**Step 2:** Create a new environment and activate it
+
+.. code-block:: bash
+
+    conda create --name=cryoem-docs
+    conda activate cryoem-docs
+
+**Step 3:** Install required dependencies
+
+.. code-block:: bash
+
+    pip install sphinx sphinx_rtd_theme
+    
+**Step 4:** Clone the repository and build docs
+
+.. code-block:: bash
+
+    git clone git@github.com:cryoem-sweden/docs.git
+    cd docs
+    make html
 
 Updating the documentation (requires GitHub user)
 -------------------------------------------------
