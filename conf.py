@@ -26,7 +26,7 @@ copyright = '2022, Swedish National CryoEM Facility '
 author = 'Swedish National CryoEM Facility '
 
 # The full version, including alpha/beta/rc tags
-version = '0.0.1'
+version = '0.0.2'
 release = '0.0.0'
 
 

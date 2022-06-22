@@ -69,14 +69,16 @@ Material Preparation
 
 * **Prepare the coolant container**:
     * Insert brass coloured inner cup, grid box holder, the spindle/spider and anti-contamination ring (figure 1)
-    * Fill up the inner (brass) and outer chamber (styrofoam) with LN2 and let it settle under a glass cupola (to prevent contaminations from humidity in the air)
+    * Fill up the inner (brass) and outer chamber (styrofoam) with LN2 and let it settle under a glass cupola (to prevent contamination from humidity in the air)
     * Wait until LN2 evaporates from the brass coloured cup (should take around 5 minutes), top up the outer chamber if necessary
         |
         |
+
         .. image:: /images/Coolant_chamber.png
             :alt: figure 1
             :scale: 50 %
             :align: center
+
         |
     
 * **Condense ethane:**
@@ -94,13 +96,17 @@ Material Preparation
     * Top up the LN2 as required
     * Place your marked grid box(es) onto the grid box holder (TEST them!)
     * Transfer the coolant chamber and LN2 thermos flask next to the Vitrobot
+
     |
     |
+
     .. image:: /images/Valves_ethane.png
         :alt: figure 2
         :scale: 50 %
         :align: center
+
     |
+
 * **(Condense ethane with a NanoSoft ethane-condenser)**:
     * **WEAR GLASSES AND GLOVES, ALWAYS WORK IN THE FUME HOOD**, make sure that all LN2 have evaporated from the ethane cup
     * Follow the instructions on the following video: https://youtu.be/J_M-IUlPuNM
@@ -134,12 +140,12 @@ Shutting down
 * **Take the tweezers off**
 * *Press*: **exit** and confirm that the tweezers were removed
 * **Switch off the vitrobot** by turning the flick-button on the back of it
-* Remove and **empty the humidifyer**
-* Pour the water out of the inner chamber of the humidifyer and remove the remaining water (in the inner chamber) from the bottom with the syringe
+* Remove and **empty the humidifier**
+* Pour the water out of the inner chamber of the humidifier and remove the remaining water (in the inner chamber) from the bottom with the syringe
 
 
 Additionaly
--------------
+-----------
 * At 99% humidity the sample does not concentrate by evaporation
 * Note that blotting parameters (time and number of blottings) determine the initial thickness of the thin film, further thinning will occur during the drain time
 * If temperature is important, keep samples in a water bath prior to loading
