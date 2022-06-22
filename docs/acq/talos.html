@@ -14,12 +14,13 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Titan Krios" href="titan.html" />
-    <link rel="prev" title="Scipion On-The-Fly processing" href="scipion.html" /> 
+    <link rel="prev" title="Session Setup" href="session.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -30,7 +31,7 @@
             <a href="../index.html" class="icon icon-home"> Docs CryoEM Sweden 
           </a>
               <div class="version">
-                0.0.1
+                0.0.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -81,7 +82,6 @@
 <li class="toctree-l2"><a class="reference internal" href="session.html#next-steps">Next Steps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="scipion.html">Scipion On-The-Fly processing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Talos Artica Operation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#launch-scipion-session">Launch Scipion Session</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#vacuum-and-temperature">Vacuum and Temperature</a></li>
@@ -183,24 +183,24 @@
            <div itemprop="articleBody">
              
   <section id="talos-artica-operation">
-<h1>Talos Artica Operation<a class="headerlink" href="#talos-artica-operation" title="Permalink to this headline">¶</a></h1>
+<h1>Talos Artica Operation<a class="headerlink" href="#talos-artica-operation" title="Permalink to this heading">¶</a></h1>
 <section id="launch-scipion-session">
-<h2>Launch Scipion Session<a class="headerlink" href="#launch-scipion-session" title="Permalink to this headline">¶</a></h2>
+<h2>Launch Scipion Session<a class="headerlink" href="#launch-scipion-session" title="Permalink to this heading">¶</a></h2>
 <p>Before you start your microscope session you need to <a class="reference internal" href="session.html#session-setup"><span class="std std-ref">start the scipion session</span></a>.</p>
 </section>
 <section id="vacuum-and-temperature">
-<h2>Vacuum and Temperature<a class="headerlink" href="#vacuum-and-temperature" title="Permalink to this headline">¶</a></h2>
+<h2>Vacuum and Temperature<a class="headerlink" href="#vacuum-and-temperature" title="Permalink to this heading">¶</a></h2>
 <p>Check that the column &amp; autoloader vacuum and temperature is good.  Typical values for the vacuum are log 1 for the column, log 15-30 for the autoloader; the autoloader temperature should be below -180C.</p>
 <img alt="../_images/vacuum.PNG" src="../_images/vacuum.PNG" />
 <img alt="../_images/temperature_control.PNG" src="../_images/temperature_control.PNG" />
 </section>
 <section id="cassette-loading-and-inventory">
-<h2>Cassette Loading and Inventory<a class="headerlink" href="#cassette-loading-and-inventory" title="Permalink to this headline">¶</a></h2>
+<h2>Cassette Loading and Inventory<a class="headerlink" href="#cassette-loading-and-inventory" title="Permalink to this heading">¶</a></h2>
 <p>Once the microscope is cold, you can <a class="reference internal" href="loading.html#loading-loading-autoloader"><span class="std std-ref">load the cassette</span></a>. After the cassette is loaded, run an inventory from the Autoloader tab, make sure that all the positions that you loaded are properly detected. Occupied positions are shown in blue, empty ones in grey.</p>
 <img alt="../_images/autoloader.PNG" src="../_images/autoloader.PNG" />
 </section>
 <section id="start-epu">
-<h2>Start EPU<a class="headerlink" href="#start-epu" title="Permalink to this headline">¶</a></h2>
+<h2>Start EPU<a class="headerlink" href="#start-epu" title="Permalink to this heading">¶</a></h2>
 <p>In case EPU is not open yet, start EPU via the Start menu. If the column valves are closed ignore the message. The window will be hiding behind the user interface software. Drag it to the second screen, minimise and maximise it again.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -212,7 +212,7 @@
 </div>
 </section>
 <section id="load-epu-settings">
-<h2>Load EPU Settings<a class="headerlink" href="#load-epu-settings" title="Permalink to this headline">¶</a></h2>
+<h2>Load EPU Settings<a class="headerlink" href="#load-epu-settings" title="Permalink to this heading">¶</a></h2>
 <p>In EPU, click on the Preparation tab, Acquisition and Optics settings. Here all the microscope conditions can be inputted to the software for the Atlas, Grid-square, Hole/Eucentric height, Data acquisition, Autofocus and Drift measurement.</p>
 <dl class="simple">
 <dt>To make it simple, we have predefined the most common EPU settings, which you can Import via the import tab:</dt><dd><ol class="arabic simple">
@@ -229,7 +229,7 @@
 <img alt="images/talos/import.png" src="images/talos/import.png" />
 </section>
 <section id="open-column-valves">
-<h2>Open Column Valves<a class="headerlink" href="#open-column-valves" title="Permalink to this headline">¶</a></h2>
+<h2>Open Column Valves<a class="headerlink" href="#open-column-valves" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Load the atlas presets.</p></li>
@@ -242,11 +242,11 @@
 <p>Now you should be able to see the beam. If you still can’t see the beam, you could double check that the high tension is on (yellow HT button in the FEG control tab of the microscope user interface). If the HT is on, but the beam is weak check that the operate button for the FEG is on (extraction voltage should be 4450, gun lens should be 5).</p>
 </section>
 <section id="load-cartridge">
-<h2>Load cartridge<a class="headerlink" href="#load-cartridge" title="Permalink to this headline">¶</a></h2>
+<h2>Load cartridge<a class="headerlink" href="#load-cartridge" title="Permalink to this heading">¶</a></h2>
 <p>Load the cartridge that you like by clicking on the position you want to load and then click on load in the Autoloader tab (this will take few minutes). You will notice that the column valves close automatically.</p>
 </section>
 <section id="low-mag-grid-screening">
-<h2>Low Mag Grid Screening<a class="headerlink" href="#low-mag-grid-screening" title="Permalink to this headline">¶</a></h2>
+<h2>Low Mag Grid Screening<a class="headerlink" href="#low-mag-grid-screening" title="Permalink to this heading">¶</a></h2>
 <p>Open the column valves and insert the screen. If you can’t see the beam, it could be that your ice is to thick for the current grid position. In that case, go to Stage and change the grid position (use joystick or double click in the stage map).</p>
 <img alt="../_images/stage1.PNG" src="../_images/stage1.PNG" />
 <p>Use the joystick to navigate to the grid squares.</p>
@@ -255,7 +255,7 @@
 <img alt="../_images/stage2.PNG" src="../_images/stage2.PNG" />
 </section>
 <section id="eucentric-height">
-<h2>Eucentric Height<a class="headerlink" href="#eucentric-height" title="Permalink to this headline">¶</a></h2>
+<h2>Eucentric Height<a class="headerlink" href="#eucentric-height" title="Permalink to this heading">¶</a></h2>
 <p>For any imaging or alignment, always bring the speciment to eucentric height (at Grid square magnification).</p>
 <ol class="arabic simple">
 <li><p>Use the joystick to put a feature in the center of the flu-screen</p></li>
@@ -283,7 +283,7 @@
 </div>
 </section>
 <section id="autofocus">
-<h2>Autofocus<a class="headerlink" href="#autofocus" title="Permalink to this headline">¶</a></h2>
+<h2>Autofocus<a class="headerlink" href="#autofocus" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Navigate to a carbon area and set the ‘data acquisition’ presets.</p></li>
 <li><p>Open the direct alignment tab (bottom right of monitor).</p></li>
@@ -308,7 +308,7 @@
 </div>
 </section>
 <section id="autostigmate">
-<h2>Autostigmate<a class="headerlink" href="#autostigmate" title="Permalink to this headline">¶</a></h2>
+<h2>Autostigmate<a class="headerlink" href="#autostigmate" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Go to the auto-functions panel in EPU and select autofunctions-TEM,  Autostigmate, preset Thon Ring</p></li>
 <li><p>Press Start.</p></li>
@@ -316,7 +316,7 @@
 <img alt="../_images/stigmate_1.PNG" src="../_images/stigmate_1.PNG" />
 </section>
 <section id="grid-screening">
-<h2>Grid Screening<a class="headerlink" href="#grid-screening" title="Permalink to this headline">¶</a></h2>
+<h2>Grid Screening<a class="headerlink" href="#grid-screening" title="Permalink to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The microscope is now aligned for screening.</p>
@@ -337,7 +337,7 @@
 </div>
 </section>
 <section id="microscope-alignment-for-epu-data-collection">
-<h2>Microscope alignment for EPU data collection<a class="headerlink" href="#microscope-alignment-for-epu-data-collection" title="Permalink to this headline">¶</a></h2>
+<h2>Microscope alignment for EPU data collection<a class="headerlink" href="#microscope-alignment-for-epu-data-collection" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Import your presets for either linear (short exposure with high dose) or counting mode (long exposure with low dose).</p></li>
 </ol>
@@ -366,7 +366,7 @@
 </div>
 </section>
 <section id="check-the-beam-dose">
-<h2>Check the beam dose<a class="headerlink" href="#check-the-beam-dose" title="Permalink to this headline">¶</a></h2>
+<h2>Check the beam dose<a class="headerlink" href="#check-the-beam-dose" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Go to an empty square with atlas presets (or in case you saved the position in your stage map, press go).</p></li>
 <li><p>Load data acquisition presets.</p></li>
@@ -377,7 +377,7 @@
 </ol>
 </section>
 <section id="atlas-and-epu-set-up">
-<h2>Atlas and EPU set up<a class="headerlink" href="#atlas-and-epu-set-up" title="Permalink to this headline">¶</a></h2>
+<h2>Atlas and EPU set up<a class="headerlink" href="#atlas-and-epu-set-up" title="Permalink to this heading">¶</a></h2>
 <p>You can now proceed to <a class="reference internal" href="atlas_epu.html#atlas-epu"><span class="std std-ref">atlas acquisition and EPU set up</span></a>.</p>
 </section>
 </section>
@@ -386,7 +386,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="scipion.html" class="btn btn-neutral float-left" title="Scipion On-The-Fly processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="session.html" class="btn btn-neutral float-left" title="Session Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="titan.html" class="btn btn-neutral float-right" title="Titan Krios" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

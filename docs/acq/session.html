@@ -14,11 +14,12 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Scipion On-The-Fly processing" href="scipion.html" />
+    <link rel="next" title="Talos Artica Operation" href="talos.html" />
     <link rel="prev" title="Grid Preparation" href="loading.html" /> 
 </head>
 
@@ -30,7 +31,7 @@
             <a href="../index.html" class="icon icon-home"> Docs CryoEM Sweden 
           </a>
               <div class="version">
-                0.0.1
+                0.0.2
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -53,7 +54,11 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../prep/graphene_clips.html">Graphene Clips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../prep/glow_discharge.html">Glow Discharge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../prep/glow_discharge.html">Glow Discharge Instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prep/glow_discharge.html#pelco-easiglow">PELCO easiGlow™</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prep/glow_discharge.html#quorum-gloqube-plus">Quorum GloQube® Plus</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Acquisition</span></p>
 <ul class="current">
@@ -77,7 +82,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#next-steps">Next Steps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="scipion.html">Scipion On-The-Fly processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="talos.html">Talos Artica Operation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="talos.html#launch-scipion-session">Launch Scipion Session</a></li>
 <li class="toctree-l2"><a class="reference internal" href="talos.html#vacuum-and-temperature">Vacuum and Temperature</a></li>
@@ -179,7 +183,7 @@
            <div itemprop="articleBody">
              
   <section id="session-setup">
-<span id="id1"></span><h1>Session Setup<a class="headerlink" href="#session-setup" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Session Setup<a class="headerlink" href="#session-setup" title="Permalink to this heading">¶</a></h1>
 <p>As part of the computational infrastructure of the SciLifeLab Cryo-EM Facility, we have implemented a simple tracking
 system for each microscope session. It is <strong>COMPULSORY</strong> that all users go through the provided Session-Wizard,
 regardless of whether one plans to use Scipion for streaming processing or not. This wizard will do for you:</p>
@@ -189,7 +193,7 @@ regardless of whether one plans to use Scipion for streaming processing or not. 
 <li><p>Setup the Scipion project if using the streaming processing.</p></li>
 </ol>
 <section id="launch-the-wizard-from-the-command-line">
-<h2>Launch the wizard from the command line<a class="headerlink" href="#launch-the-wizard-from-the-command-line" title="Permalink to this headline">¶</a></h2>
+<h2>Launch the wizard from the command line<a class="headerlink" href="#launch-the-wizard-from-the-command-line" title="Permalink to this heading">¶</a></h2>
 <p>From the Linux <cite>cryo-workstation</cite> (either 1 or 2) by the microscope, open a terminal window to connect to the
 <cite>cryo-staging</cite> machine by typing: <cite>ssh -Y cryo-staging</cite>. After that, you need to execute the command to start the
 session: <cite>session-titan</cite> (or session-talos depending on your booking).
@@ -199,7 +203,7 @@ The following screenshot shows the terminal windows and both commands:</p>
 the next section.</p>
 </section>
 <section id="setup-the-parameters-in-the-session-wizard-gui">
-<h2>Setup the parameters in the Session-Wizard GUI<a class="headerlink" href="#setup-the-parameters-in-the-session-wizard-gui" title="Permalink to this headline">¶</a></h2>
+<h2>Setup the parameters in the Session-Wizard GUI<a class="headerlink" href="#setup-the-parameters-in-the-session-wizard-gui" title="Permalink to this heading">¶</a></h2>
 <img alt="../_images/wizard1.png" src="../_images/wizard1.png" />
 <p>The first tab should already grab the information of the user that is assigned to that day
 (the information is taken from the Booking System). In case that it is not correct, you can
@@ -209,15 +213,15 @@ select some protocols to be used.</p>
 <img alt="../_images/wizard2.png" src="../_images/wizard2.png" />
 </section>
 <section id="copy-raw-data-to-your-project-folder">
-<h2>Copy raw data to your project folder<a class="headerlink" href="#copy-raw-data-to-your-project-folder" title="Permalink to this headline">¶</a></h2>
+<h2>Copy raw data to your project folder<a class="headerlink" href="#copy-raw-data-to-your-project-folder" title="Permalink to this heading">¶</a></h2>
 <section id="k2-camera">
-<h3>K2 Camera<a class="headerlink" href="#k2-camera" title="Permalink to this headline">¶</a></h3>
+<h3>K2 Camera<a class="headerlink" href="#k2-camera" title="Permalink to this heading">¶</a></h3>
 <p>If you are using the K2 camera on the Titan, you will need to go to the Gatan computer to execute a script to copy
 your movies to your project folder. This procedure is documented in point 29 of the
 [K2 Instruction Document](<a class="reference external" href="https://www.dropbox.com/sh/rtss2c5qblmurmf/AABqRvU3X9eIrM7wiR3a9Jg1a?dl=0&amp;preview=Using_the_K2_Titan_Krios.pdf">https://www.dropbox.com/sh/rtss2c5qblmurmf/AABqRvU3X9eIrM7wiR3a9Jg1a?dl=0&amp;preview=Using_the_K2_Titan_Krios.pdf</a>)</p>
 </section>
 <section id="falcon-3">
-<h3>Falcon 3<a class="headerlink" href="#falcon-3" title="Permalink to this headline">¶</a></h3>
+<h3>Falcon 3<a class="headerlink" href="#falcon-3" title="Permalink to this heading">¶</a></h3>
 <p>If you are using the Falcon 3, first you need to select the folder name in EPU for storing the images.
 We recommend to follow the convention of project code + ‘_epu’ (e.g, dbb00072_epu, sll00069_epu, etc).
 Then the raw data can be found in <cite>/mnt/krios-falcon3</cite> (or <cite>/mnt/talos-falcon3</cite>).
@@ -235,7 +239,7 @@ $ rsync -avuP /mnt/talos-falcon3/dbb00073_20180126_EPU/ /data/staging/dbb/dbb000
 </section>
 </section>
 <section id="next-steps">
-<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this heading">¶</a></h2>
 <p>Check the Scipion pre-processing HERE (FIXME)</p>
 </section>
 </section>
@@ -245,7 +249,7 @@ $ rsync -avuP /mnt/talos-falcon3/dbb00073_20180126_EPU/ /data/staging/dbb/dbb000
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="loading.html" class="btn btn-neutral float-left" title="Grid Preparation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="scipion.html" class="btn btn-neutral float-right" title="Scipion On-The-Fly processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="talos.html" class="btn btn-neutral float-right" title="Talos Artica Operation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

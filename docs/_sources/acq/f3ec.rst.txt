@@ -79,8 +79,6 @@ Example
 - An extreme case is 19.99 second exposure with 776 elemental frames split into 65 dose fractions and align yes. This will give 6 elemental frames in the early dose fractions and 391 elemental frames in the last fraction (which is 50.5% of the total dose).
 
 
-.. |A2| replace:: Å\ :sup:`2`\
- 
 .. _f3ec-magtables:
 
 Magnification table, Talso Arctica F3EC, SciLifeLab Solna
