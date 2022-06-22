@@ -20,7 +20,6 @@ Here you will find the documentation for
 
     acq/loading
     acq/session
-    acq/scipion
     acq/talos
     acq/titan
     acq/f3ec
