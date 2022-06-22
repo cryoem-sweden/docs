@@ -8,20 +8,15 @@ Building the documentation (requires GitHub user)
 
 **Step 1:** Install anaconda ( or miniconda)
 
-**Step 2:** Create a new environment and activate it
+**Step 2:** Create a new environment and install dependencies
 
 .. code-block:: bash
 
     conda create --name=cryoem-docs
     conda activate cryoem-docs
-
-**Step 3:** Install required dependencies
-
-.. code-block:: bash
-
     pip install sphinx sphinx_rtd_theme
     
-**Step 4:** Clone the repository and build docs
+**Step 3:** Clone the repository and build docs
 
 .. code-block:: bash
 
@@ -29,35 +24,61 @@ Building the documentation (requires GitHub user)
     cd docs
     make html
 
+
 Updating the documentation (requires GitHub user)
 -------------------------------------------------
 
-* Make sure you are able to build the docs as stated in the previous section
-* cd docs
-* git pull  # update with new changes
-* edit files or add new files
-* make html (or make clean html to completely rebuild)
-* Review generated html at: /path/to/docs/_build/html/index.html
-* Commit changes: 
-  * git add
-  * git commit -m "Messages about your changes"
-  * git push 
+Before updating the documentation, make sure you are able to build the docs as 
+stated in the previous section. Then follow these steps:
+
+**Step 1:** Update your local folder with latest changes
+
+.. code-block:: bash
+
+    cd /path/to/docs
+    git pull --prune
+    
+**Step 2:** Make changes: edit existing files or add new ones (including images). Then build the documentation:
+
+.. code-block:: bash
+
+    make html # (or make clean html for a complete rebuild)
+    
+**Step 3:** Review generated html at: /path/to/docs/_build/html/index.html. Then commit the changes.
+
+.. code-block:: bash   
+   
+    git add .
+    git commit -m "Messages about your changes"
+    git push 
+  
   
 Publishing the changes online (requires GitHub user)
 ----------------------------------------------------
 
-* Update 'master' branch with latest changes
-* cd docs
-* git checkout master
-* git pull  # update with new changes
-* git checkout html 
-* git make html (or make clean html to completely rebuild)
-* Review generated html at: /path/to/docs/_build/html/index.html
-* # Copy generated files from _build/html to internal docs folder
-* rsync -av _build/html/ docs/
-* Commit changes: 
-  * git commit -am "New release of the documentation"
-  * git push
+**Step 1:** Update 'master' branch with latest changes.
 
+.. code-block:: bash
 
+    cd /path/to/docs
+    git checkout master
+    git pull --prune
 
+**Step 2:** Merge 'master' branch into 'html' one and build the docs.
+
+.. code-block:: bash
+
+    git checkout html
+    git merge master
+    make html # (or make clean html for a complete rebuild)
+    Review generated html at: /path/to/docs/_build/html/index.html
+    
+**Step 3:** Copy build into 'docs' folder of the 'html' branch and push changes.
+
+.. code-block:: bash
+
+    # Copy generated files from _build/html to internal docs folder
+    rsync -av _build/html/ docs/
+    git commit -am "New release of the documentation"
+    git push
+   
