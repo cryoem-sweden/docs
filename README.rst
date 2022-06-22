@@ -70,7 +70,7 @@ Publishing the changes online (requires GitHub user)
 
     git checkout html
     git merge master
-    make html # (or make clean html for a complete rebuild)
+    make clean html
     Review generated html at: /path/to/docs/_build/html/index.html
     
 **Step 3:** Copy build into 'docs' folder of the 'html' branch and push changes.
@@ -79,6 +79,7 @@ Publishing the changes online (requires GitHub user)
 
     # Copy generated files from _build/html to internal docs folder
     rsync -av _build/html/ docs/
-    git commit -am "New release of the documentation"
+    git add docs
+    git commit -m "New release of the documentation"
     git push
    
