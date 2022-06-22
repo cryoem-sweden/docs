@@ -12,7 +12,7 @@ Building the documentation (requires GitHub user)
 
 .. code-block:: bash
 
-    conda create --name=cryoem-docs
+    conda create -y --name=cryoem-docs python=3.8
     conda activate cryoem-docs
     pip install sphinx sphinx_rtd_theme
     
